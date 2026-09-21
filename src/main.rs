@@ -69,14 +69,24 @@ fn main() {
     // let finger = '\u{261D}'; // Unicode character for a finger pointing right
     // println!("{}\n{}\n{}", letter, number, finger); // prints the values of letter, number, and finger
 
-    let a = 13;
-    let b = 2.3;
-    let c: f32 = 120.0;
+    // let a = 13;
+    // let b = 2.3;
+    // let c: f32 = 120.0;
 
-    // my code here
-    let average = (a as f64 + b as f64 + c as f64) / 3.0;
+    // // my code here
+    // let average = (a as f64 + b as f64 + c as f64) / 3.0;
 
-    assert_eq!(average, 45.1); 
-    println!("Test passed!")
+    // assert_eq!(average, 45.1); 
+    // println!("Test passed!")
+
+    let mut letters = ['a', 'b', 'c'];
+    letters[0] = 'x';
+    let first_letter = letters[0];
+    println!("The first letter is {}", first_letter);
+
+    let numbers: [i32; 5];
+    numbers = [0; 5]; // This will cause a compile-time error because numbers is uninitialized  
+    let index: usize = numbers.len();
+    println!("The last number is {}", numbers[4]); // This will cause a compile-time error because numbers is uninitialized
 
 }
