@@ -54,18 +54,29 @@ fn main() {
     // let c = (a ^ b) || panic!(); // prints the value of a XOR b OR a AND b
     // println!("c is {}", c); // prints the value of c
 
-    let a = true;
-    let b = false;
-    println!(" a is {} and b is {}", a, b); // prints the values of a and b 
-    println!("a EQUAL TO b is {}", a == b); // prints the value of a EQUAL TO b 
-    println!("a NOT EQUAL TO b is {}", a != b); // prints the value of a NOT EQUAL TO b
-    println!("a GREATER THAN b is {}", a > b); // prints the value of a GREATER THAN b
-    println!("a GREATER THAN OR EQUAL TO b is {}", a >= b); // prints the value of a GREATER THAN OR EQUAL TO b
-    println!("a LESS THAN b is {}", a < b); // prints the value of a LESS THAN b
-    println!("a LESS THAN OR EQUAL TO b is {}", a <= b); // prints the value of a LESS THAN OR EQUAL TO b
+    // let a = true;
+    // let b = false;
+    // println!(" a is {} and b is {}", a, b); // prints the values of a and b 
+    // println!("a EQUAL TO b is {}", a == b); // prints the value of a EQUAL TO b 
+    // println!("a NOT EQUAL TO b is {}", a != b); // prints the value of a NOT EQUAL TO b
+    // println!("a GREATER THAN b is {}", a > b); // prints the value of a GREATER THAN b
+    // println!("a GREATER THAN OR EQUAL TO b is {}", a >= b); // prints the value of a GREATER THAN OR EQUAL TO b
+    // println!("a LESS THAN b is {}", a < b); // prints the value of a LESS THAN b
+    // println!("a LESS THAN OR EQUAL TO b is {}", a <= b); // prints the value of a LESS THAN OR EQUAL TO b
 
-    let letter = 'a';
-    let number = '1';
-    let finger = '\u{261D}'; // Unicode character for a finger pointing right
-    println!("{}\n{}\n{}", letter, number, finger); // prints the values of letter, number, and finger
+    // let letter = 'a';
+    // let number = '1';
+    // let finger = '\u{261D}'; // Unicode character for a finger pointing right
+    // println!("{}\n{}\n{}", letter, number, finger); // prints the values of letter, number, and finger
+
+    let a = 13;
+    let b = 2.3;
+    let c: f32 = 120.0;
+
+    // my code here
+    let average = (a as f32 + b + c) / 3.0;
+
+    assert_eq!(average, 45.1); 
+    println!("Test passed!")
+
 }
