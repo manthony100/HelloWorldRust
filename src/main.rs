@@ -79,14 +79,20 @@ fn main() {
     // assert_eq!(average, 45.1); 
     // println!("Test passed!")
 
-    let mut letters = ['a', 'b', 'c'];
-    letters[0] = 'x';
-    let first_letter = letters[0];
-    println!("The first letter is {}", first_letter);
+    // let mut letters = ['a', 'b', 'c'];
+    // letters[0] = 'x';
+    // let first_letter = letters[0];
+    // println!("The first letter is {}", first_letter);
 
-    let numbers: [i32; 5];
-    numbers = [0; 5]; // This will cause a compile-time error because numbers is uninitialized  
-    let index: usize = numbers.len();
-    println!("The last number is {}", numbers[4]); // This will cause a compile-time error because numbers is uninitialized
+    // let numbers: [i32; 5];
+    // numbers = [0; 5]; // This will cause a compile-time error because numbers is uninitialized  
+    // let index: usize = numbers.len();
+    // println!("The last number is {}", numbers[4]); // This will cause a compile-time error because numbers is uninitialized
 
+    let parking_lot = [[1, 2, 3], [
+                                    4, 5, 6]];
+    let number = parking_lot[1][2];
+    println!("number is {}", number);
+
+    let garage = [[[0; 100]; 20]; 5] = [[[0; 100]; 20]; 5];
 }
