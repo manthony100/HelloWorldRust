@@ -1,3 +1,5 @@
+use core::num;
+
 fn main() {
     /* multiple 
     line 
@@ -62,5 +64,8 @@ fn main() {
     println!("a LESS THAN b is {}", a < b); // prints the value of a LESS THAN b
     println!("a LESS THAN OR EQUAL TO b is {}", a <= b); // prints the value of a LESS THAN OR EQUAL TO b
 
-
+    let letter = 'a';
+    let number = '1';
+    let finger = '\u{261D}'; // Unicode character for a finger pointing right
+    println!("{}\n{}\n{}", letter, number, finger); // prints the values of letter, number, and finger
 }
