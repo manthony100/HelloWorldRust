@@ -41,14 +41,26 @@ fn main() {
     // value = value >> 2; // right shift operator, shifts all bits in value to the right by 2 positions
     // println!("Right shift: value is {:08b}", value); // prints the octal representation of value
 
+    // let a = true;
+    // let b = false;
+    // println!("a is {} and b is {}", a, b); // prints the values of a and b
+    // println!("not a is {}", !a); // prints the value of not a
+    // println!("a AND b is {}", a & b); // prints the value of a AND b
+    // println!("a OR b is {}", a | b); // prints the value of a OR b
+    // println!("a XOR b is {}", a ^ b); // prints the value of a XOR b
+
+    // let c = (a ^ b) || panic!(); // prints the value of a XOR b OR a AND b
+    // println!("c is {}", c); // prints the value of c
+
     let a = true;
     let b = false;
-    println!("a is {} and b is {}", a, b); // prints the values of a and b
-    println!("not a is {}", !a); // prints the value of not a
-    println!("a AND b is {}", a & b); // prints the value of a AND b
-    println!("a OR b is {}", a | b); // prints the value of a OR b
-    println!("a XOR b is {}", a ^ b); // prints the value of a XOR b
+    println!(" a is {} and b is {}", a, b); // prints the values of a and b 
+    println!("a EQUAL TO b is {}", a == b); // prints the value of a EQUAL TO b 
+    println!("a NOT EQUAL TO b is {}", a != b); // prints the value of a NOT EQUAL TO b
+    println!("a GREATER THAN b is {}", a > b); // prints the value of a GREATER THAN b
+    println!("a GREATER THAN OR EQUAL TO b is {}", a >= b); // prints the value of a GREATER THAN OR EQUAL TO b
+    println!("a LESS THAN b is {}", a < b); // prints the value of a LESS THAN b
+    println!("a LESS THAN OR EQUAL TO b is {}", a <= b); // prints the value of a LESS THAN OR EQUAL TO b
 
-    let c = (a ^ b) && panic!(); // prints the value of a XOR b OR a AND b
-    println!("c is {}", c); // prints the value of c
+
 }
