@@ -74,7 +74,7 @@ fn main() {
     let c: f32 = 120.0;
 
     // my code here
-    let average = (a as f32 + b + c) / 3.0;
+    let average = (a as f64 + b as f64 + c as f64) / 3.0;
 
     assert_eq!(average, 45.1); 
     println!("Test passed!")
