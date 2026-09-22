@@ -207,7 +207,7 @@ fn main() {
     println!("Test passed!");
     
 }
-fn findMax(numbers: &[i32]) -> i32 {
+fn find_max(numbers: &[i32]) -> i32 {
     let mut max = numbers[0];
     for &num in numbers.iter() {
         if num > max {
@@ -216,7 +216,7 @@ fn findMax(numbers: &[i32]) -> i32 {
     }
     return max;
 }
-fn findMin(numbers: &[i32]) -> i32 {
+fn find_min(numbers: &[i32]) -> i32 {
     let mut min = numbers[0];
     for &num in numbers.iter() {
         if num < min {
@@ -225,7 +225,7 @@ fn findMin(numbers: &[i32]) -> i32 {
     }
     return min;
 }
-fn findMean(numbers: &[i32]) -> f64 {
+fn find_mean(numbers: &[i32]) -> f64 {
     let sum: i32 = numbers.iter().sum();
     let mean = sum as f64 / numbers.len() as f64;
     return mean;
