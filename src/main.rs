@@ -89,10 +89,18 @@ fn main() {
     // let index: usize = numbers.len();
     // println!("The last number is {}", numbers[4]); // This will cause a compile-time error because numbers is uninitialized
 
-    let parking_lot = [[1, 2, 3], [
-                                    4, 5, 6]];
-    let number = parking_lot[1][2];
-    println!("number is {}", number);
+    // let parking_lot = [[1, 2, 3], [
+    //                                 4, 5, 6]];
+    // let number = parking_lot[1][2];
+    // println!("number is {}", number);
 
-    let garage = [[[0; 100]; 20]; 5] = [[[0; 100]; 20]; 5];
+    // let garage = [[[0; 100]; 20]; 5] = [[[0; 100]; 20]; 5];
+
+    let mut stuff: (u8, f32, char) = (10, 3.14, 'x');
+    stuff.0 += 3;
+    let first_item = stuff.0;
+    println!("The first item is {}", first_item);
+
+    let (a, b, c) = stuff;
+    println!("b is {}", b);
 }
