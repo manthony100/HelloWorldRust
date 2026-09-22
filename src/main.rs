@@ -96,11 +96,30 @@ fn main() {
 
     // let garage = [[[0; 100]; 20]; 5] = [[[0; 100]; 20]; 5];
 
-    let mut stuff: (u8, f32, char) = (10, 3.14, 'x');
-    stuff.0 += 3;
-    let first_item = stuff.0;
-    println!("The first item is {}", first_item);
+    // let mut stuff: (u8, f32, char) = (10, 3.14, 'x');
+    // stuff.0 += 3;
+    // let first_item = stuff.0;
+    // println!("The first item is {}", first_item);
 
-    let (a, b, c) = stuff;
-    println!("b is {}", b);
+    // let (a, b, c) = stuff;
+    // println!("b is {}", b);
+
+    say_hello();
+    say_hello();
+    say_a_number(13);
+    let x = 1;
+    let y = 2;
+    say_the_sum(x, y);
+}
+
+fn say_hello() {
+    println!("Hello!");
+}
+
+fn say_a_number(number: i32) {
+    println!("The number is {}", number);
+}
+fn say_the_sum(a: u8, b: u8) {
+    let sum = a + b;
+    println!("The sum of {} and {} is {}", a, b, sum);
 }
