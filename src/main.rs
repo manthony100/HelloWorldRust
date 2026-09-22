@@ -1,4 +1,5 @@
 use core::num;
+use std::cell;
 
 fn main() {
     /* multiple 
@@ -111,9 +112,18 @@ fn main() {
     // let y = 2;
     // say_the_sum(x, y);
 
-    let result = square(13);
-    println!("The result is {:?}", result);
+    // let result = square(13);
+    // println!("The result is {:?}", result);
 
+    let celsius_temp = 23.0;
+    let fahrenheit_temp = celsious_to_fahrenheit(celsius_temp);
+
+    assert_eq!(fahrenheit_temp, 73.4);
+    println!("Test passed!");
+
+}
+fn celsious_to_fahrenheit(celsius: f64) -> f64 {
+    return celsius * 9.0 / 5.0 + 32.0;
 }
 fn square(x: i32) -> (i32, i32) {
     println!("Squaring {}", x);
