@@ -104,12 +104,21 @@ fn main() {
     // let (a, b, c) = stuff;
     // println!("b is {}", b);
 
-    say_hello();
-    say_hello();
-    say_a_number(13);
-    let x = 1;
-    let y = 2;
-    say_the_sum(x, y);
+    // say_hello();
+    // say_hello();
+    // say_a_number(13);
+    // let x = 1;
+    // let y = 2;
+    // say_the_sum(x, y);
+
+    let result = square(13);
+    println!("The result is {:?}", result);
+
+}
+fn square(x: i32) -> (i32, i32) {
+    println!("Squaring {}", x);
+    return (x, x * x);
+    println!("End of function");
 }
 
 fn say_hello() {
