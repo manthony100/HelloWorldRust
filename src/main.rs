@@ -180,18 +180,57 @@ fn main() {
     //     println!("number is {}", nummber);
     // }
 
-    let mut matrix = [[1, 2, 3], 
-                                [4, 5, 6],
-                                [7, 8, 9]];
-    for row in matrix.iter_mut(){
-        for num in row.iter_mut(){
-            *num += 10;
-            print!("{}\t", num);
-        }
-        println!();
-    }
+    // let mut matrix = [[1, 2, 3], 
+    //                             [4, 5, 6],
+    //                             [7, 8, 9]];
+    // for row in matrix.iter_mut(){
+    //     for num in row.iter_mut(){
+    //         *num += 10;
+    //         print!("{}\t", num);
+    //     }
+    //     println!();
+    // }
+
+    // Chapter 5 Challenge
+    let numbers = [1, 9, -2, 0, 23, 20, -7, 13, 37, 20, 56, -18, 20, 3];
+    let mut max : i32;
+    let mut min : i32;
+    let mut mean : f64;
+
+    max = findMax(&numbers);
+    min = findMin(&numbers);
+    mean = findMean(&numbers);  
+
+    assert_eq!(max, 56);
+    assert_eq!(min, -18);
+    assert_eq!(mean, 12.5);
+    println!("Test passed!");
     
 }
+fn findMax(numbers: &[i32]) -> i32 {
+    let mut max = numbers[0];
+    for &num in numbers.iter() {
+        if num > max {
+            max = num;
+        }
+    }
+    return max;
+}
+fn findMin(numbers: &[i32]) -> i32 {
+    let mut min = numbers[0];
+    for &num in numbers.iter() {
+        if num < min {
+            min = num;
+        }
+    }
+    return min;
+}
+fn findMean(numbers: &[i32]) -> f64 {
+    let sum: i32 = numbers.iter().sum();
+    let mean = sum as f64 / numbers.len() as f64;
+    return mean;
+}   
+
 fn celsious_to_fahrenheit(celsius: f64) -> f64 {
     return celsius * 9.0 / 5.0 + 32.0;
 }
