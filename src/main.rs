@@ -115,11 +115,16 @@ fn main() {
     // let result = square(13);
     // println!("The result is {:?}", result);
 
-    let celsius_temp = 23.0;
-    let fahrenheit_temp = celsious_to_fahrenheit(celsius_temp);
+    // let celsius_temp = 23.0;
+    // let fahrenheit_temp = celsious_to_fahrenheit(celsius_temp);
 
-    assert_eq!(fahrenheit_temp, 73.4);
-    println!("Test passed!");
+    // assert_eq!(fahrenheit_temp, 73.4);
+    // println!("Test passed!");
+
+    let x = 3;
+    if x == 3{
+        println!("x is 3");
+    }
 
 }
 fn celsious_to_fahrenheit(celsius: f64) -> f64 {
