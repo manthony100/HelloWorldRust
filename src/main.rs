@@ -126,16 +126,27 @@ fn main() {
     //     println!("x is 3");
     // }
 
-    let x = 3;
-    let y = 5;
+    // let x = 3;
+    // let y = 5;
     
-    if x > y {
-        println!("x is greater than y");
-    } else if x < y {
-        println!("x is less than y");
+    // if x > y {
+    //     println!("x is greater than y");
+    // } else if x < y {
+    //     println!("x is less than y");
+    // } else {
+    //     println!("x is equal to y");
+    // }
+
+    let make_x_odd = true;
+    let x if make_x_odd { 3 } else { 2 };
+
+    if make_x_odd {
+        x = 3;
     } else {
-        println!("x is equal to y");
+        x = 2;
     }
+
+    println!("x is {}", x);
 
 }
 fn celsious_to_fahrenheit(celsius: f64) -> f64 {
